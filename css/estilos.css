@@ -1,0 +1,195 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.col-1 {
+  width: 8.33%;
+}
+.col-2 {
+  width: 16.66%;
+}
+.col-3 {
+  width: 25%;
+}
+.col-4 {
+  width: 33.33%;
+}
+.col-5 {
+  width: 41.66%;
+}
+.col-6 {
+  width: 50%;
+}
+.col-7 {
+  width: 58.33%;
+}
+.col-8 {
+  width: 66.66%;
+}
+.col-9 {
+  width: 75%;
+}
+.col-10 {
+  width: 83.33%;
+}
+.col-11 {
+  width: 91.66%;
+}
+.col-12 {
+  width: 100%;
+}
+.flex {
+  display: flex;
+}
+.row {
+  flex-direction: row;
+}
+.column {
+  flex-direction: column;
+}
+.wrap {
+  flex-wrap: wrap;
+}
+.align-content-center {
+  align-content: center;
+}
+.justify-center {
+  justify-content: center;
+}
+.justify-evenly {
+  justify-content: space-evenly;
+}
+.justify-between {
+  justify-content: space-between;
+}
+.justify-around {
+  justify-content: space-around;
+}
+.justify-end {
+  justify-content: flex-end;
+}
+.align-center {
+  align-items: center;
+}
+.align-start {
+  align-items: flex-start;
+}
+.align-end {
+  align-items: flex-start;
+}
+html {
+  scroll-behavior: smooth;
+  font-size: 25px;
+}
+@media only screen and (min-width: 1200px) {
+  html {
+    font-size: 40px;
+  }
+}
+html a {
+  text-decoration: none;
+}
+html ul li {
+  list-style-type: none;
+}
+html body {
+  background-image: url("../img/vectores-02.png");
+  font-size: 16px;
+  background-color: hsl(0, 5%, 95%);
+  font-family: 'Muli', sans-serif;
+  font-weight: 200;
+  color: white;
+}
+html body nav#Navegacion {
+  position: fixed;
+  top: 0;
+  height: 1rem;
+  width: 100%;
+}
+html body nav#Navegacion ul li a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 1rem;
+}
+html body header {
+  height: 100vh;
+  padding: 1rem;
+}
+html body header .contenedor {
+  background-color: rgba(15, 70, 255, 0.7);
+  border-radius: 1rem;
+  border-bottom-right-radius: 5rem;
+  height: 100%;
+}
+html body header .contenedor h1 img {
+  max-width: 100%;
+  max-height: 50vh;
+}
+html body header .contenedor p {
+  padding: 1rem;
+  font-weight: 200;
+  font-size: 0.65rem;
+  text-align: center;
+}
+html body header .contenedor ul li a {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  color: white;
+  font-weight: 700;
+  padding: 15px;
+  border-radius: 25px;
+  background-color: rgba(15, 255, 0, 0.7);
+}
+html body article#SocialMedia {
+  height: 2rem;
+  background-color: orange;
+}
+html body article#SocialMedia h2 {
+  flex: 1;
+  text-align: center;
+  font-size: 0.7rem;
+}
+html body article#SocialMedia ul {
+  flex: 1;
+}
+html body article#SocialMedia ul li a {
+  color: white;
+}
+html body article#SocialMedia ul li a i {
+  font-size: 1rem;
+}
+html body main section {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-content: center;
+  min-height: 100vh;
+}
+html body main section#Crew article {
+  height: 16vh;
+  background-color: rgba(15, 70, 255, 0.7);
+  border-radius: 0.3rem;
+  padding: 15px;
+  margin: 10px;
+  display: flex;
+  align-items: center;
+}
+html body main section#Crew article img {
+  height: 90px;
+  width: 90px;
+}
+html body main section#Crew article:nth-child(n) {
+  border-bottom-right-radius: 2rem;
+  flex-direction: row;
+}
+html body main section#Crew article:nth-child(n) h3,
+html body main section#Crew article:nth-child(n) p {
+  text-align: left;
+}
+html body footer {
+  background-color: #3c3c3c;
+}

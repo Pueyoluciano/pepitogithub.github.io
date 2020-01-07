@@ -1,0 +1,209 @@
+* {
+    padding: 0;
+    margin: 0;
+
+    box-sizing: border-box;
+}
+
+@import "grilla.less";
+@import "flex.less";
+
+html {
+    scroll-behavior: smooth;
+
+    font-size: 25px;
+    // @media only screen and (max-width: 600px) {
+    //  ...
+    // }
+
+    // @media only screen and (min-width: 600px) {
+    //     ...
+    // }
+
+    // @media only screen and (min-width: 768px) {
+    //     ...
+    // }
+
+    // @media only screen and (min-width: 992px) {
+    //     ...
+    // }
+
+    @media only screen and (min-width: 1200px) {
+        font-size: 40px;
+    }
+
+    a {
+        text-decoration: none;
+    }
+
+    ul {
+        li {
+            list-style-type: none;
+        }
+    }
+
+    body {
+        background-image: url("../img/vectores-02.png");
+        // background-color: #4b84ff;
+        font-size: 16px;
+        background-color: hsl(0, 5%; 95%; );
+        font-family: 'Muli', sans-serif;
+        font-weight: 200;
+
+        color: white;
+
+        nav#Navegacion {
+            position: fixed;
+            top: 0;
+            height: 1rem;
+            width: 100%;
+
+            ul {
+                li {
+                    a {
+                        .flex;
+                        .justify-center;
+                        .align-center;
+
+                        height: 1rem;
+                    }
+                }
+            }
+        }
+
+        header {
+            height: 100vh;
+            padding: 1rem;
+
+            .contenedor {
+                background-color: rgba(15, 70, 255, 0.7);
+                border-radius: 1rem;
+                border-bottom-right-radius: 5rem;
+                height: 100%;
+
+                h1 {
+                    // flex-grow: 1;
+
+                    img {
+                        max-width: 100%;
+                        max-height: 50vh;
+                    }
+                }
+
+                // .presentacion {
+                // flex-grow: 6;
+
+                p {
+                    padding: 1rem;
+                    font-weight: 200;
+                    font-size: 0.65rem;
+                    text-align: center;
+                }
+
+                ul {
+                    li {
+                        a {
+                            .flex;
+                            .row;
+                            .justify-evenly;
+                            .align-center;
+
+                            color: white;
+                            font-weight: 700;
+
+                            padding: 15px;
+                            border-radius: 25px;
+                            background-color: rgba(15, 255, 0, 0.7);
+
+                            // height: 50px;
+                        }
+                    }
+
+                    // }
+                }
+            }
+        }
+
+        article#SocialMedia {
+            height: 2rem;
+
+            // background-color: rgba(15, 70, 255, 0.7);
+            background-color: orange;
+
+            h2 {
+                flex: 1;
+                text-align: center;
+                font-size: 0.7rem;
+            }
+
+            ul {
+                flex: 1;
+
+                li {
+                    a {
+                        color: white;
+
+                        i {
+                            font-size: 1rem;
+                        }
+                    }
+                }
+            }
+        }
+
+        main {
+            section {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-evenly;
+                align-content: center;
+
+                min-height: 100vh;
+
+                &#Crew {
+                    article {
+                        height: 16vh;
+                        background-color: rgba(15, 70, 255, 0.7);
+                        border-radius: 0.3rem;
+
+                        padding: 15px;
+                        margin: 10px;
+                        display: flex;
+                        align-items: center;
+
+                        img {
+                            height: 90px;
+                            width: 90px;
+                        }
+
+                        &:nth-child(n) {
+                            border-bottom-right-radius: 2rem;
+                            flex-direction: row;
+
+                            h3,
+                            p {
+                                text-align: left;
+                            }
+
+                        }
+
+                        // &:nth-child(even) {
+                        //     border-bottom-left-radius: 3rem;
+                        //     flex-direction: row-reverse;
+
+                        //     h3,
+                        //     p {
+                        //         text-align: right;
+                        //     }
+                        // }
+                    }
+                }
+            }
+        }
+
+        footer {
+            background-color: rgb(60, 60, 60);
+
+        }
+    }
+}
