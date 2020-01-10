@@ -78,6 +78,18 @@
 .align-end {
   align-items: flex-start;
 }
+.shadow {
+  box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5);
+}
+.soft_shadow {
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+}
+.transition {
+  transition: all 0.2s;
+}
+.transition-fast {
+  transition: all 0.1s;
+}
 html {
   scroll-behavior: smooth;
   font-size: 25px;
@@ -95,8 +107,8 @@ html ul li {
 }
 html body {
   background-image: url("../img/vectores-02.png");
+  background-color: ivory;
   font-size: 16px;
-  background-color: hsl(0, 5%, 95%);
   font-family: 'Muli', sans-serif;
   font-weight: 200;
   color: white;
@@ -107,33 +119,42 @@ html body nav#Navegacion {
   height: 1rem;
   width: 100%;
 }
+html body nav#Navegacion ul {
+  filter: opacity(30%);
+  transition: all 0.2s;
+}
 html body nav#Navegacion ul li a {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 1rem;
+  color: black;
 }
-html body header {
+html body nav#Navegacion ul:hover {
+  filter: opacity(100%);
+}
+html body header#Portada {
   height: 100vh;
   padding: 1rem;
 }
-html body header .contenedor {
+html body header#Portada .contenedor {
   background-color: rgba(15, 70, 255, 0.7);
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
   border-radius: 1rem;
   border-bottom-right-radius: 5rem;
   height: 100%;
 }
-html body header .contenedor h1 img {
+html body header#Portada .contenedor h1 img {
   max-width: 100%;
   max-height: 50vh;
 }
-html body header .contenedor p {
+html body header#Portada .contenedor p {
   padding: 1rem;
   font-weight: 200;
   font-size: 0.65rem;
   text-align: center;
 }
-html body header .contenedor ul li a {
+html body header#Portada .contenedor ul li a {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
@@ -145,22 +166,32 @@ html body header .contenedor ul li a {
   background-color: rgba(15, 255, 0, 0.7);
 }
 html body article#SocialMedia {
-  height: 2rem;
-  background-color: orange;
+  height: 3rem;
+  margin-top: 25px;
+  background-color: #bdccff;
 }
-html body article#SocialMedia h2 {
-  flex: 1;
+html body article#SocialMedia .texto {
+  flex: 7;
+  font-size: 0.5rem;
   text-align: center;
-  font-size: 0.7rem;
+}
+html body article#SocialMedia .texto h2 {
+  font-size: 0.5rem;
 }
 html body article#SocialMedia ul {
-  flex: 1;
+  flex: 6;
 }
 html body article#SocialMedia ul li a {
+  display: inline-block;
   color: white;
-}
-html body article#SocialMedia ul li a i {
-  font-size: 1rem;
+  width: 35px;
+  height: 35px;
+  padding: 10px;
+  border-radius: 25px;
+  background-color: #546aaf;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 html body main section {
   display: flex;
@@ -169,27 +200,96 @@ html body main section {
   align-content: center;
   min-height: 100vh;
 }
+html body main section#Crew header {
+  background-color: rgba(80, 80, 80, 0.7);
+  padding: 1.5rem;
+  text-align: center;
+}
 html body main section#Crew article {
   height: 16vh;
-  background-color: rgba(15, 70, 255, 0.7);
   border-radius: 0.3rem;
   padding: 15px;
   margin: 10px;
   display: flex;
+  flex-direction: row;
   align-items: center;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
 }
 html body main section#Crew article img {
   height: 90px;
   width: 90px;
+  border-radius: 0.3rem;
+  border-bottom-left-radius: 1.5rem;
+  box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5);
 }
 html body main section#Crew article:nth-child(n) {
   border-bottom-right-radius: 2rem;
-  flex-direction: row;
+  border-bottom-left-radius: 2rem;
 }
 html body main section#Crew article:nth-child(n) h3,
 html body main section#Crew article:nth-child(n) p {
   text-align: left;
 }
-html body footer {
+html body main section#Crew article:nth-child(1) {
+  background-color: hsla(0, 100%, 53%, 0.7);
+}
+html body main section#Crew article:nth-child(3) {
+  background-color: hsla(20, 100%, 53%, 0.7);
+}
+html body main section#Crew article:nth-child(5) {
+  background-color: hsla(40, 100%, 53%, 0.7);
+}
+html body main section#Crew article:nth-child(7) {
+  background-color: hsla(60, 100%, 53%, 0.7);
+}
+html body main section#Crew article:nth-child(9) {
+  background-color: hsla(80, 100%, 53%, 0.7);
+}
+html body main section#Crew article:nth-child(11) {
+  background-color: hsla(100, 100%, 53%, 0.7);
+}
+html body main section#Crew article:hover:nth-child(2n+1) {
+  filter: contrast(55%);
+  transition: all 0.1s;
+}
+html body main section#Crew article:hover {
+  cursor: pointer;
+}
+html body main section#Crew article .descripcion {
+  margin-left: 15px;
+  padding: 15px;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.1);
+  border-radius: 0.3rem;
+  border-bottom-right-radius: 1.5rem;
+}
+html body main section#Crew article .descripcion h3 {
+  font-size: 18px;
+}
+html body footer #Links {
   background-color: #3c3c3c;
+}
+html body footer #Links ul {
+  padding: 1rem;
+}
+html body footer #Links ul li a {
+  color: white;
+}
+html body footer #Colaboradores {
+  background-color: #323232;
+}
+html body footer #Colaboradores ul li p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+}
+html body footer #Outro {
+  background-color: #282828;
+  font-size: 0.7em;
+  text-align: center;
+}
+html body footer #Outro p {
+  margin: 0 1rem;
 }

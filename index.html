@@ -49,7 +49,7 @@
 
         </ul>
     </nav>
-    <header>
+    <header id="Portada">
         <div class="contenedor flex column wrap align-content-center justify-center align-center">
             <h1 class="flex justify-center align-center">
                 <a href="#">
@@ -85,20 +85,23 @@
             <!-- <a href="#" class="boton" target="_blank">Instagram</a> -->
     </header>
     <article id="SocialMedia" class="flex row justify-evenly align-center">
-        <h2>Checate nuestras redes sociales</h2>
+        <div class="texto">
+            <h2>Checate nuestras redes sociales</h2>
+            <p>en todas somos /cafeconjavapod</p>
+        </div>
         <ul class="flex row justify-evenly align-center">
             <li>
-                <a class="" href="#">
+                <a class="" href="https://www.facebook.com/cafeconjavapod/" target="_blank">
                     <i class="fab fa-facebook-f"></i>
                 </a>
             </li>
             <li>
-                <a class="" href="#">
+                <a class="" href="https://twitter.com/cafeconjavapod?lang=es" target="_blank">
                     <i class="fab fa-twitter"></i>
                 </a>
             </li>
             <li>
-                <a class="" href="#">
+                <a class="" href="https://www.instagram.com/cafeconjavapod/?hl=es" target="_blank">
                     <i class="fab fa-instagram"></i>
                 </a>
             </li>
@@ -106,48 +109,98 @@
     </article>
     <main>
         <section id="Crew">
-            <article id="Lucho">
-                <img src="">
-                <div class="descripcion">
-                    <h3>Lucho</h3>
-                    <p>Alto kpo</p>
-                </div>
-            </article>
-            <article id="Sil">
-                <img src="">
-                <div class="descripcion">
-                    <h3>Sil</h3>
-                    <p>Alta kpa</p>
-                </div>
-            </article>
-            <article id="Bernie">
-                <img src="">
-                <div class="descripcion">
-                    <h3>Bernie</h3>
-                    <p>Alto kpo</p>
-                </div>
-            </article>
-            <article id="Fede">
-                <img src="">
-                <div class="descripcion">
-                    <h3>Fede</h3>
-                    <p>Alto kpo</p>
-                </div>
-            </article>
-            <article id="Mati">
-                <img src="">
-                <div class="descripcion">
-                    <h3>Mati</h3>
-                    <p>Alto kpo</p>
-                </div>
-            </article>
-            <article id="Chris">
-                <img src="">
-                <div class="descripcion">
-                    <h3>Chris</h3>
-                    <p>Alto kpo</p>
-                </div>
-            </article>
+            <header>
+                <h2>La Crew de Café Con Java</h2>
+                <p>
+                    No son los mejores, tampoco fueron nuestra primera opción, pero le ponen una re onda
+                </p>
+            </header>
+            <div>
+                <article id="Lucho">
+                    <picture>
+                        <source srcset="img/lucho_face.jpg" media="(max-width: 400px)">
+                        <source srcset="img/lucho_small.jpg">
+                        <img src="lucho_face.jpg" alt="Lucho face">
+                    </picture>
+                    <div class="descripcion">
+                        <h3>Luciano Pueyo</h3>
+                        <p>Alto kpo</p>
+                    </div>
+                </article>
+                <article style="display: none;">
+
+                </article>
+                <article id="Sil">
+                    <picture>
+                        <source srcset="img/bernie_face.jpg" media="(max-width: 400px)">
+                        <source srcset="img/bernie_small.jpg">
+                        <img src="bernie_face.jpg" alt="Bernie face">
+                    </picture>
+                    <div class="descripcion">
+                        <h3>Silvina Valeria</h3>
+                        <p>Alta kpa</p>
+                    </div>
+                </article>
+                <article style="display: none;">
+
+                </article>
+                <article id="Bernie">
+                    <picture>
+                        <source srcset="img/bernie_face.jpg" media="(max-width: 400px)">
+                        <source srcset="img/bernie_small.jpg">
+                        <img src="bernie_face.jpg" alt="Bernie face">
+                    </picture>
+                    <div class="descripcion">
+                        <h3>Bernie Pau</h3>
+                        <p>Alto kpo</p>
+                    </div>
+                </article>
+                <article style="display: none;">
+
+                </article>
+                <article id="Fede">
+                    <picture>
+                        <source srcset="img/fede_face.jpg" media="(max-width: 400px)">
+                        <source srcset="img/fede_small.jpg">
+                        <img src="fede_face.jpg" alt="Fede face">
+                    </picture>
+                    <div class="descripcion">
+                        <h3>Fede Rusco</h3>
+                        <p>Alto kpo</p>
+                    </div>
+                </article>
+                <article style="display: none;">
+
+                </article>
+                <article id="Mati">
+                    <picture>
+                        <source srcset="img/mati_face.jpg" media="(max-width: 400px)">
+                        <source srcset="img/mati_small.jpg">
+                        <img src="mati_face.jpg" alt="Mati face">
+                    </picture>
+                    <div class="descripcion">
+                        <h3>Mati Aristimuño</h3>
+                        <p>Alto kpo</p>
+                    </div>
+                </article>
+                <article style="display: none;">
+
+                </article>
+                <article id="Chris">
+                    <picture>
+                        <source srcset="img/chris_face.jpg" media="(max-width: 400px)">
+                        <source srcset="img/chris_small.jpg">
+                        <img src="chris_face.jpg" alt="Chris face">
+                    </picture>
+                    <div class="descripcion">
+                        <h3>Christian Breitman</h3>
+                        <p>Alto kpo</p>
+                    </div>
+                </article>
+                <article style="display: none;">
+
+                </article>
+            </div>
         </section>
 
         <section id="Spotify">
@@ -163,10 +216,68 @@
         </section>
     </main>
     <footer>
-        todos los derechos reservados
-        <p>
-            Hecho con <i class="fa fa-heart"></i> por Luciano Pueyo
-        </p>
+        <section id="Links">
+            <p>Nuestas redes sociales:</p>
+            <ul class="flex row justify-evenly align-center wrap">
+                <li>
+                    <a href="#">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fab fa-spotify"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        Endava
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        Podlab
+                    </a>
+                </li>
+            </ul>
+        </section>
+        <section id="Colaboradores">
+            <p>Gracias a:</p>
+            <ul class="flex row justify-evenly align-center wrap">
+                <li>
+                    <p>
+                        Endava
+                    </p>
+                </li>
+                <li>
+                    <p>Podlab</p>
+                </li>
+                <li>
+                    <p>Radio en casa</p>
+                </li>
+                <li>
+                    <p>Cultural Bombing</p>
+                </li>
+            </ul>
+        </section>
+        <section id="Outro" class="flex row justify-center wrap">
+            <p>
+                todos los derechos reservados
+            </p>
+            <p>
+                Hecho con <i class="fa fa-heart"></i> por Luciano Pueyo
+            </p>
+        </section>
     </footer>
 </body>
 
